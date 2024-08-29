@@ -1,0 +1,7 @@
+<h1>Rate the course</h1>
+<form method="post">
+    {% csrf_token %}
+    <label for="rating">Rate:</label>
+    <input type="number" id="rating" name="rating" step="0.1" min="0" max="10">
+    <button type="submit">Send</button>
+</form>

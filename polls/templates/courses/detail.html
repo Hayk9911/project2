@@ -1,0 +1,4 @@
+<h1>{{ course.title }}</h1>
+<p>{{ course.description }}</p>
+<p>Rating: {{ course.rate }}</p>
+<a href="{% url 'rate_course' course.pk %}">Rate the course</a>
